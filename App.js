@@ -7,6 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import store from "./src/store";
 import Authentication from "./src/Containers/Authentication/Authentication";
+import LabourForm from "./src/Containers/LabourForm/LabourForm";
 
 export default class App extends React.Component {
   componentDidMount = () => {
@@ -18,7 +19,7 @@ export default class App extends React.Component {
       <Provider store={store}>
         <NavigationContainer>
           <View style={styles.container}>
-            <Authentication />
+            <LabourForm />
           </View>
         </NavigationContainer>
       </Provider>

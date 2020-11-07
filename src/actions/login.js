@@ -4,8 +4,6 @@ import AsyncStorage from "@react-native-community/async-storage";
 import { successAuth, authFailure } from "../helper/authActionHelper";
 
 const login = (credential) => {
-  console.log("done");
-  console.log(credential, `${baseApi}`);
   return async (dispatch) => {
     try {
       const { data } = await axios.post(`${baseApi}${loginApi}`, {
